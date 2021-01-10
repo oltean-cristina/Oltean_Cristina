@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Oltean_Cristina</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-danger border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Songs/Index">My PlayList</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Genres/Index">Genres </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Companies/Index">Music Recordings Companies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="navbar">
+        <nav>
+            <table>
+                <tr>
+                    <td><img src="~/css/queen.jpg" height="191" /></td>
+                    <td><img src="~/css/justin.jpg" height="191" /></td>
+                    <td><img src="~/css/red.jpg" height="191" /></td>
+                    <td><img src="~/css/ari.jpg" height="191" /></td>
+                    <td><img src="~/css/abba.jpg" height="191" /></td>
+                    <td><img src="~/css/one.jpg" height="191" /></td>
+                </tr>
+            </table>
+        </nav>
+    </div>
+    <div class="navbar1">
+        <nav>
+            <table>
+                <tr>
+                    <td><img src="~/css/tyga.jpg" height="195" /></td>
+                    <td><img src="~/css/bts.jpg" height="195" /></td>
+                    <td><img src="~/css/bee.jpg" height="195" /></td>
+                    <td><img src="~/css/met.jpg" height="195" /></td>
+                    <td><img src="~/css/enri.jpg" height="195" /></td>
+                    <td><img src="~/css/gaga.jpg" height="195" /></td>
+                </tr>
+            </table>
+        </nav>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - Oltean_Cristina - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
